@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#40000000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#80000000"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/app_launch_button"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/launch_desc"
+            android:padding="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/new_item_widget"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/menu_add_item"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/add_item" />
+
+        <ImageButton
+            android:id="@+id/sort_widget"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/menu_order_list"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/order_list" />
+
+        <ImageButton
+            android:id="@+id/open_widget"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="@string/menu_open_list"
+            android:paddingBottom="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="4dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/open_list" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        android:padding="0dp" />
+
+    <ListView
+        android:id="@+id/widget_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#40000000" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textSize="16sp"
+        android:text="@string/nothing_here"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
